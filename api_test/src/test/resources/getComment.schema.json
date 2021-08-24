@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "post_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "post_id",
+        "name",
+        "comment",
+        "updated_at",
+        "created_at"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ],
+  "additionalProperties": false
+}

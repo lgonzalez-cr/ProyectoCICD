@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "results": {
+      "additionalItems": false,
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "array",
+              "additionalItems": true,
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "comment": {
+                      "type": "string"
+                    },
+                    "updated_at": {
+                      "type": "integer"
+                    },
+                    "created_at": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "comment",
+                    "updated_at",
+                    "created_at"
+                  ]
+                }
+              ]
+            },
+            "meta": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "total"
+              ]
+            }
+          },
+          "required": [
+            "data",
+            "meta"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "results"
+  ],
+  "additionalProperties": false
+}
